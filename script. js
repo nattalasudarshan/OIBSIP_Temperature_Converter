@@ -1,0 +1,19 @@
+function convert()
+{
+    var temp = document.getElementById("temp").value;
+    var choice = document.getElementById("choice").value;
+    var result;
+
+    if(choice == "ctof")
+    {
+        result = (temp * 9/5) + 32;
+        document.getElementById("answer").innerHTML =
+        "Temperature = " + result + " °F";
+    }
+    else
+    {
+        result = (temp - 32) * 5/9;
+        document.getElementById("answer").innerHTML =
+        "Temperature = " + result + " °C";
+    }
+      }
